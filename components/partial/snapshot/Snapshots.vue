@@ -69,6 +69,8 @@ class Snapshots extends Vue {
 
   @Mutation('mixin-snapshots/removeSnapshots') removeSnapshots
 
+  @Mutation('mixin-snapshots/removeExternals') removeExternals
+
   @Action('mixin-snapshots/loadSnapshots') loadSnapshots
 
   @Action('mixin-snapshots/loadExternals') loadExternals
@@ -105,13 +107,14 @@ class Snapshots extends Vue {
 
   async requestLoadloadExternals () {
     try {
-      const params = { destination: this.asset.destination, tag: this.asset.tag }
+      const params = { destination: this.asset.destination, tag: this.asset.tag, asset: this.asset.asset_id }
       await this.loadExternals(params)
     } catch (error) {}
   }
 
   beforeDestroy () {
     this.removeSnapshots()
+    this.removeExternals()
   }
 }
 export default Snapshots
