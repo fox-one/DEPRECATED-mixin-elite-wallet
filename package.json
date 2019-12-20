@@ -1,9 +1,8 @@
 {
-  "name": "nuxt-ts-template",
+  "name": "mixin-elite-wallet",
   "version": "1.0.0",
-  "description": "nuxt template starter",
-  "author": "divisey",
-  "private": true,
+  "description": "a elite wallet for mixin messager",
+  "author": "foxone",
   "config": {
     "nuxt": {
       "host": "0.0.0.0",
