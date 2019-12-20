@@ -1,0 +1,369 @@
+[
+  {
+    "title": "Chosen",
+    "bots": [
+      {
+        "name": "LUCKY BTC BOT",
+        "tags": "",
+        "identity_number": "7000101487",
+        "icon_url": "https://images.mixin.one/KKXs79wUTL9IM_iahoV42X1B6v7mqaGmqH3u-VvPhGQpT5bV6EI5VcEjqivSb8_FMN70QjIjAqsUa_0BGF4E3K4=s256",
+        "description": "BTC rewards for check-in, invitations and comments in MIXIN.",
+        "url": "https://mixin.one/users/71ae9403-9d20-4772-b47a-729e0cc3648b",
+        "effects": ""
+      },
+      {
+        "name": "ATM",
+        "tags": "trade, exchange, Chosen",
+        "identity_number": "7000101996",
+        "icon_url": "https://images.mixin.one/nScYvKoJbEEaDsX2c55MQR64b_x7Ox-IRdKujR-Pv-1dw27NP6zSEJeFKxXQAqIXQBHpvGGZnIjae7CGQX0_vXU=s256",
+        "description": "Fox.ONE instant exchange service. Get the coins you want in seconds. A MUST for a newcomer",
+        "url": "https://mixin.one/users/edb0bcf9-4521-43aa-a50d-21a2266a9d41",
+        "effects": "github"
+      },
+      {
+        "name": "Z-OTC",
+        "tags": "exchange, Chosen",
+        "identity_number": "7000102035",
+        "icon_url": "https://images.mixin.one/IUpgTYOMh_oO3vCODEKjmfyizsOz49bPxY0DLDAi3kgXYHjOJ1eexCjLdFZs8dl5gSzkrnDqa5E2xBD_Hc_IUek=s256",
+        "description": "Based on Mixin Network, support for fiat currency deposits. ERC-20 USDT is easy to buy, convenient for digital asset investment",
+        "url": "https://mixin.one/users/fb523769-e4f9-4148-b16d-1ca0edcdb955",
+        "effects": ""
+      },
+      {
+        "name": "Mixin News",
+        "tags": "news, Chosen",
+        "identity_number": "7000101914",
+        "icon_url": "https://images.mixin.one/HrwBshWISquH7qWNq3b-WBokEpdEdOfIcogb0_rJHPnXh1VrbpMLFpjX7xRP56xP-vNnA4HJzfen_eSfwPT_U14=s256",
+        "description": "Maintained by the Mixin team, publishing the latest and fastest Mixin related product news and articles",
+        "url": "https://mixin.one/users/e49eeb58-64cd-4065-b4f8-bac86647448d",
+        "effects": ""
+      },
+      {
+        "name": "Fix Invest",
+        "tags": "tool, Chosen",
+        "identity_number": "7000102362",
+        "icon_url": "https://images.mixin.one/5ZH3sTtY1XkPPZJvNP7c-FzS98hgLPMGu_xpooaNniWgISXePYrOXV8Unc-x3BIb7g_Hg_T9rHnO6eVZyWqN89qB=s256",
+        "description": "Fox.ONE's fixed investment tool is suitable for investors who are bullish on digital assets for a long time. Personalized settings, Automatic investment, Free of charge, Real-time review of ROR",
+        "url": "https://mixin.one/users/3ec8c231-f5a2-4081-af15-e2eac80db745",
+        "effects": ""
+      },
+      {
+        "name": "Flowin",
+        "tags": "shop, Recharge, Chosen",
+        "identity_number": "7000101963",
+        "icon_url": "https://images.mixin.one/Xjzqo2FaM8rN4Fsikffz7exDVFoC7XD1C8bg1xa7zwzOyMYfD3PLMsFEiNnjgWlor_aHtlccjnNeM1-SKT9ABjA=s256",
+        "description": "Flea market, grocery store, selling a variety of products and services, Ang Lee ’s “director” dedication!",
+        "url": "https://mixin.one/users/076ecd36-4c8e-4a12-9aa2-d541bdbba58d",
+        "effects": ""
+      }
+    ]
+  },
+  {
+    "title": "Investment",
+    "bots": [
+      {
+        "name": "ATM",
+        "tags": "exchange",
+        "identity_number": "7000101996",
+        "icon_url": "https://images.mixin.one/nScYvKoJbEEaDsX2c55MQR64b_x7Ox-IRdKujR-Pv-1dw27NP6zSEJeFKxXQAqIXQBHpvGGZnIjae7CGQX0_vXU=s256",
+        "description": "Fox.ONE instant exchange service. Get the coins you want in seconds. A MUST for a newcomer",
+        "url": "https://mixin.one/users/edb0bcf9-4521-43aa-a50d-21a2266a9d41",
+        "effects": " github"
+      },
+      {
+        "name": "ZOTC",
+        "tags": "exchange",
+        "identity_number": "7000102035",
+        "icon_url": "https://images.mixin.one/IUpgTYOMh_oO3vCODEKjmfyizsOz49bPxY0DLDAi3kgXYHjOJ1eexCjLdFZs8dl5gSzkrnDqa5E2xBD_Hc_IUek=s256",
+        "description": "Based on Mixin Network, support for fiat currency deposits. ERC-20 USDT is easy to buy, convenient for digital asset investment",
+        "url": "https://mixin.one/users/fb523769-e4f9-4148-b16d-1ca0edcdb955",
+        "effects": ""
+      },
+      {
+        "name": "ExinOne",
+        "tags": "Fiat, invest",
+        "identity_number": "7000101276",
+        "icon_url": "https://images.mixin.one/y10b63pl9TQy5Tr8-hguLVDZWl-Xt1ug3f-LgPSl6s6ZxKsYzdy9sWZFTarULKxWdnJQyDs_tr1q73ctdI6MKA=s256",
+        "description": "Based on the Mixin Network, it supports fiat currency deposits, and currency trading docks with Binance, Huobi and BigONE.",
+        "url": "https://mixin.one/users/61103d28-3ac2-44a2-ae34-bd956070dab1",
+        "effects": ""
+      },
+      {
+        "name": "Mixcoin",
+        "tags": "exchange",
+        "identity_number": "7000101524",
+        "icon_url": "https://images.mixin.one/c9gus9bjvikMKlszvmcVcMdAid1qOqhQoKKuohLsQJ6NEaA_C_XihIKorVOBbgOAdzxZq3Et821lc72gd6oyaDU=s256",
+        "description": "An open-source front-end trading applet based on OceanONE, which automatically displays transaction pairs according to the wallet, and directly orders to the Ocean matching engine.",
+        "url": "https://mixin.one/users/82d20bc7-9a97-4a69-bcd0-4da502374f6c",
+        "effects": " github"
+      },
+      {
+        "name": "Coin Exchange",
+        "tags": "exchange",
+        "identity_number": "7000100132",
+        "icon_url": "https://images.mixin.one/5FCFO5LtieuJoZU7l9sFNe6YSKRONBMEFFOUyQ3BQLNskk8jAjxirqEQQbWOHZipLB4ftYBLSjzYJy4d2Wd-jqo=s256",
+        "description": "Simple asset exchange tool, free of charge",
+        "url": "https://mixin.one/users/31c7e0ce-88ae-45b4-8915-053d8adc556c",
+        "effects": " github"
+      }
+    ]
+  },
+  {
+    "title": "News",
+    "bots": [
+      {
+        "name": "Mixin Product News",
+        "tags": "news",
+        "identity_number": "7000101914",
+        "icon_url": "https://images.mixin.one/HrwBshWISquH7qWNq3b-WBokEpdEdOfIcogb0_rJHPnXh1VrbpMLFpjX7xRP56xP-vNnA4HJzfen_eSfwPT_U14=s256",
+        "description": "Maintained by the Mixin team, publishing the latest and fastest Mixin related product news and articles",
+        "url": "https://mixin.one/users/e49eeb58-64cd-4065-b4f8-bac86647448d",
+        "effects": ""
+      },
+      {
+        "name": "ExinNews",
+        "tags": "news",
+        "identity_number": "7000102325",
+        "icon_url": "https://images.mixin.one/3jdc2LyPfwrntZOa1psoBCf8XhYqhxDoE9tV5EnUiirKkiD4XIRO7MkwEsE2PkxbWXmzVg1v2OaJwgV0BigYkC4=s256",
+        "description": "Exin team official channel, get the latest news from ExinOne, ExinEarn, ExinPool",
+        "url": "https://mixin.one/users/a074bd5b-626f-4d4b-9ded-20b6b3f7bc8f",
+        "effects": ""
+      },
+      {
+        "name": "Gossip",
+        "tags": "news",
+        "identity_number": "7000102201",
+        "icon_url": "https://images.mixin.one/SCUSdxdwYMZzwWDsanAVAFaAgKGYsKHM5bH2QKpcGT4ui5KBgq5vJktos09SFIXIG3QtrMx0ouDfrF-p2_LmXj6g=s256",
+        "description": "Every night I share with you the news from the circles of Mixin, PRESSone, Exin, FoxOne, etc.",
+        "url": "https://mixin.one/users/53dabe3b-7473-4f54-8606-ca559b8671a4",
+        "effects": ""
+      },
+      {
+        "name": "Mixin link the future world",
+        "tags": "news",
+        "identity_number": "7000100225",
+        "icon_url": "https://images.mixin.one/SGzqJAc2SZHe6-ciHXKNAu_oGdDNBWNaQ7lYxrMYeLvO8u6aIzy8xvFM4JQdHkJB8GSLt2OheQxUIbeb5ojX3g=s256",
+        "description": "Zhuzi share gossip talk about Mixin with you, interspersed with interesting, fun, and interesting robot introductions",
+        "url": "https://mixin.one/users/6d16d8ef-3557-423c-b915-052955cfd0bc",
+        "effects": ""
+      },
+      {
+        "name": "Coin World Bot",
+        "tags": "news",
+        "identity_number": "7000100102",
+        "icon_url": "https://images.mixin.one/2ehkzRwsLNFn8s0102U703aehwcPm9_iUmnpkfqzZPICd5Yo3iFpopCheXNOXl13TKsef8v7XV72jGfww663kX8=s256",
+        "description": "Coin World Unofficial Bot, Real-time Push",
+        "url": "https://mixin.one/users/1fc37f38-28e2-442c-9187-79eaee9aaa3b",
+        "effects": ""
+      },
+      {
+        "name": "Readhub News",
+        "tags": "news",
+        "identity_number": "7000101501",
+        "icon_url": "https://images.mixin.one/N7D4pLReFjZhzPNZg_tnujXVMK08WTO4VsP8o76rKMJGKwiXH9uXJOPhUvOu7hLfdKU2hiIa2kXgza8pH88FQiA=s256",
+        "description": "Readhub unofficial robot, mainly pushes hot topics and blockchain news",
+        "url": "https://mixin.one/users/69fa380d-24cd-4e92-b981-c2168320f818",
+        "effects": ""
+      },
+      {
+        "name": "ChainONE Blockchain technology refers to the north",
+        "tags": "news",
+        "identity_number": "7000101952",
+        "icon_url": "https://images.mixin.one/P1whpteJPXuLkWphVHZ54Cr4wwriTzY6xwWexithr5_z7uICp7MMvf5PUukFzi2ozBnIqPysa68f59jXmeBAxlcM=s256",
+        "description": "Blockchain technology updates, industry information, etc.",
+        "url": "https://mixin.one/users/2440ab6d-0c27-4eaa-a3cb-e09ffa22bc19",
+        "effects": ""
+      },
+      {
+        "name": "IMEOS News",
+        "tags": "news",
+        "identity_number": "7000101290",
+        "icon_url": "https://images.mixin.one/6itqfVRsT_EX9CG0oLY_1lw_zh6muk2ujyIi_7l8XCjkIxdvEPqeyUMKVPAY85M2CThjK-RVx28YkPk3o5DfCg=s256",
+        "description": "EOS newsletter, collection of global Dapp information, market tools and EOS eco-market data",
+        "url": "https://mixin.one/users/7ad1c20d-3143-4c5c-aab8-f9a544db0008",
+        "effects": ""
+      },
+      {
+        "name": "PRSDigg",
+        "tags": "entertainment",
+        "identity_number": "7000101549",
+        "icon_url": "https://images.mixin.one/L0egX-GZxT0Yh-dd04WKeAqVNRzgzuj_Je_-yKf8aQTZo-xihd-LogbrIEr-WyG9WbJKGFvt2YYx-UIUa1qQMRla=s256",
+        "description": "Digg from PressOne",
+        "url": "https://mixin.one/users/6d8fd25a-1eb1-4afb-b2a6-d34991959b76",
+        "effects": ""
+      }
+    ]
+  },
+  {
+    "title": "Entertainment",
+    "bots": [
+      {
+        "name": "Lottery",
+        "tags": "Betting",
+        "identity_number": "7000102020",
+        "icon_url": "https://images.mixin.one/WbcmlmR5O__-w3YvNWZOpkTdMAOC-87Jey3WYv7gckYE8LTj5LY3_fbTlH_83QcVZ8BCI_YrIY7L2dx7Y6ont_4=s256",
+        "description": "Lucky popularity king, you can grab the big cake! Supports EOS, XIN, BTC, ETH, XRP, CNB. You can set multiple purchase points for your avatar.",
+        "url": "https://mixin.one/users/b1d68201-6abf-4d71-8946-35399279e97f",
+        "effects": ""
+      },
+      {
+        "name": "Diceos",
+        "tags": "Betting",
+        "identity_number": "7000101571",
+        "icon_url": "https://images.mixin.one/vlvDXCHSBts32tU3lyt6h6MKIst23BsPz7BZojtwrfLBOJYhCdTYgJVRIg01jJSmULtmYTnngcBCQQbzk7G9=s256",
+        "description": "Dice 🎲 game based on Mixin Network",
+        "url": "https://mixin.one/users/8f492936-2c0f-4667-92c1-e43babafda75",
+        "effects": " github"
+      },
+      {
+        "name": "Slotin",
+        "tags": "Betting",
+        "identity_number": "7000101605",
+        "icon_url": "https://images.mixin.one/pt3xQ6tXIVix7Bs_tVvwY24E34_MbkbDLwJJD1lH8YKjBDNbMU25CAG9pfSxFw5JpqyiGATsEwDQsAOOwNVSAmht=s256",
+        "description": "Slotin, a simple and fun slot machine",
+        "url": "https://mixin.one/users/78a80973-79bd-473e-a39a-c902c2825a87",
+        "effects": ""
+      },
+      {
+        "name": "Happy cancellation",
+        "tags": "game",
+        "identity_number": "7000101750",
+        "icon_url": "https://images.mixin.one/UlNTkIjCRLfT29PSy-9WGmk-o_eKeZRLAmKZ_nGKzFjE6DohqkpBBnYEziq0mLE4u7nzQEFFLoxJ5lNRHdqjIw=s256",
+        "description": "The best choice for leisure and pass time!",
+        "url": "https://mixin.one/users/725ff204-42f7-4ea7-b667-d2dc8d123421",
+        "effects": ""
+      },
+      {
+        "name": "Gold miner",
+        "tags": "game",
+        "identity_number": "7000101751",
+        "icon_url": "https://images.mixin.one/ZEoEsY6HPtsB61qIoYyPf_q6E_-w0BsgnEAqyDVGGHMRLP-uK73Qe8xpscHtOhu1jfgEEbBNXK-A2VZ-CI78ZQ8=s256",
+        "description": "Vertical version of gold miner, exquisite production, high difficulty",
+        "url": "https://mixin.one/users/0d93ab7c-d97a-4838-9c8d-34627472353e",
+        "effects": ""
+      },
+      {
+        "name": "Tetris",
+        "tags": "game",
+        "identity_number": "7000101754",
+        "icon_url": "https://images.mixin.one/AbuEKHV-HtnQcZuZq1oZ509xbxGB8zbqBFnFHxv-ocWV5HRrXcjhtP025QYsedL2fBJBvh9wYdnmkVM4PegLtM4=s256",
+        "description": "The Russian game challenge is here again. How high will the players challenge this time?",
+        "url": "https://mixin.one/users/a97cc584-b73f-471e-9831-dfa2db439aaf",
+        "effects": ""
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "bots": [
+      {
+        "name": "Daily Reminder",
+        "tags": "Chosen",
+        "identity_number": "7000100141",
+        "icon_url": "https://images.mixin.one/mtWfWe9jzUWaNIqjLgyDWx7d4x6aVuW2GhK5ZfPux5qHYBEgGAIXCuFe0zVNyNIEw4ouII9Rtd0VIh4wbQuh3xMB=s256",
+        "description": "Don't worry about forgetting to sign in anymore! Remember to turn on Mixin push notification permissions for better experience!",
+        "url": "https://mixin.one/users/8df76799-0df7-4600-ad52-c6ebdb01727a",
+        "effects": ""
+      },
+      {
+        "name": "Fix Invest",
+        "tags": "tool",
+        "identity_number": "7000102362",
+        "icon_url": "https://images.mixin.one/5ZH3sTtY1XkPPZJvNP7c-FzS98hgLPMGu_xpooaNniWgISXePYrOXV8Unc-x3BIb7g_Hg_T9rHnO6eVZyWqN89qB=s256",
+        "description": "Fox.ONE's fixed investment tool is suitable for investors who are bullish on digital assets for a long time. Personalized settings, Automatic investment, Free of charge, Real-time review of ROR",
+        "url": "https://mixin.one/users/3ec8c231-f5a2-4081-af15-e2eac80db745",
+        "effects": ""
+      },
+      {
+        "name": "Group Assistant",
+        "tags": "tool",
+        "identity_number": "7000101417",
+        "icon_url": "https://images.mixin.one/rOq9nv5Xj6ugCGLIpVK1LizJD4YMr0pQ1az-CxJKw24WsXCOpRUKeUaHU-3cJf775WhFo3VhZZkIeA3blZnCzNk=s256",
+        "description": "An assistant bot for your group. You can create split bill, roll dice in the group",
+        "url": "https://mixin.one/users/244f2757-d170-4191-91eb-d73157df1461",
+        "effects": ""
+      },
+      {
+        "name": "Myxin",
+        "tags": "tool",
+        "identity_number": "7000101526",
+        "icon_url": "https://images.mixin.one/ctBsMPE_oxpRxyUfeuQkdkHp3-REKdFLPNsm7UtbiqL5SDgcWUghDPknCPcu2P6F27Oeo1IGVSl4dw67tyqkRqM=s256",
+        "description": "Through this robot, you can open your own free or paid secret circles, as well as popular secret circles!",
+        "url": "https://mixin.one/users/9ccadd37-fdf4-4334-9bc4-99f699ab3a4e",
+        "effects": ""
+      },
+      {
+        "name": "Position assistant",
+        "tags": "tool",
+        "identity_number": "7000100087",
+        "icon_url": "https://images.mixin.one/SFQ_EA5qpSndAWPekcaDzzGwCJiu7UC_0R6obB7T5VTAmO0FduoUHRTuzBlWAEnbZTbBNCZHs0w2KMtqSxpQ1A=s256",
+        "description": "Add the robot as a group member and set it as an administrator, the position assistant will periodically check and remove members who do not meet the position requirements",
+        "url": "https://mixin.one/users/fb458e06-0176-4fde-aaff-6e0e8b9c2c67",
+        "effects": ""
+      },
+      {
+        "name": "Red Packet",
+        "tags": "tool",
+        "identity_number": "7000100089",
+        "icon_url": "https://images.mixin.one/O5okDmLlVqcOSk8LEHVSfEhs5T6hAFRjtpulCAGuLJd8GyYClOMHHqVawQTleBpn1IsAf1Ag4JOQYoo8_NWllI0O=s256",
+        "description": "Add the robot as a group member, and then return to the session. From the + expand menu, click the value red envelope to send a price red envelope",
+        "url": "https://mixin.one/users/af61f3ca-17fe-478f-b738-4a1773db49c2",
+        "effects": ""
+      },
+      {
+        "name": "Here comes the redpaket",
+        "tags": "tool",
+        "identity_number": "7000100016",
+        "icon_url": "https://images.mixin.one/X44V48LK9oEBT3izRGKqdVSPfiH5DtYTzzF0ch5nP-f7tO4v0BTTqVhFEHqd52qUeuVas-BSkLH1ckxEI51-jXmF=s256",
+        "description": "Add the robot as a group member, and then return to the session. Click the red envelope from the + expand menu to send all the assets in your wallet as a red envelope.",
+        "url": "https://mixin.one/users/1d15c3d0-cb17-472d-bc62-b10b15553732",
+        "effects": ""
+      },
+      {
+        "name": "Mixin Live Assistant",
+        "tags": "tool",
+        "identity_number": "7000102100",
+        "icon_url": "https://images.mixin.one/2nHyksjB-Ldd6kYcuPRxnCdo8WaHGdQAE4cztcQARUpIpegOaBwnvSA9h4g55wRzriPeInVW2OBZG0jiiIjdXCfV=s256",
+        "description": "Send a live broadcast link to the assistant, and the assistant will automatically parse and generate a live message back to you, so you can watch the live broadcast in Mixin",
+        "url": "https://mixin.one/users/b523c28b-1946-4b98-a131-e1520780e8af",
+        "effects": ""
+      },
+      {
+        "name": "Mixin monitor",
+        "tags": "tool",
+        "identity_number": "7000101498",
+        "icon_url": "https://images.mixin.one/XMVXQ5zDTzLLqcAirQR-hJv5ATjfmbbXYSOdyQSh_PjaM6Ko49hnKeJVYVzJNd8I44kNctKRFSD40DvyqK0plQ=s256",
+        "description": "Monitor service status of nodes, public chains, withdrawals, new users, etc.",
+        "url": "https://mixin.one/users/22687f1e-4593-495d-a93b-ad1e3d640aeb",
+        "effects": ""
+      },
+      {
+        "name": "Mixin Collect Money",
+        "tags": "tool",
+        "identity_number": "7000101485",
+        "icon_url": "https://images.mixin.one/DWtpbN9L3vM3ZL8Opp5bo7KmNTR7eEZLNGkmXslNc6q-6CgxlWvaj_Zwfo5ZCsCji7Rcal5PV7aWDjLLfropeeM=s256",
+        "description": "The one-time fixed collection function is useful when you need to charge someone a fixed currency. Select the currency, fill in the quantity and remarks and directly generate a payment link or send a QR code to the other party.",
+        "url": "https://mixin.one/users/b080e9b1-e93e-49e6-9c52-a7b7eb91f604",
+        "effects": ""
+      },
+      {
+        "name": "Coin make tool",
+        "tags": "tool",
+        "identity_number": "7000101740",
+        "icon_url": "https://images.mixin.one/68rfMStxTR8qPAjfEqQyZ79bjXxAKQi0uIDhJZLx_bqt3KZax2_X_YiqItWuv53HZ6388kZEin6m2MZqTEDOaZ0=s256",
+        "description": "Paid self-service coin make tool, currently supports ERC20.",
+        "url": "https://mixin.one/users/be542c27-a0cc-4422-ae55-c734bfcc2797",
+        "effects": ""
+      },
+      {
+        "name": "Shitcoin junk box",
+        "tags": "tool",
+        "identity_number": "7000101799",
+        "icon_url": "https://images.mixin.one/qlDZRdQFQjbQB6fzr16yPn4-lZUgK4zmSrtWcX67ITXXMr1EFgFE1lFbTB9ELpVWJC-2ExV1wGpLffhE4d7J8zy8=s256",
+        "description": "Open source Shitcoin trash can help you clean up tokens without price",
+        "url": "https://mixin.one/users/cd05e2b8-8d51-45b2-9814-c7beecd9c059",
+        "effects": ""
+      }
+    ]
+  }
+]

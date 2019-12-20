@@ -1,0 +1,28 @@
+html, body, #__nuxt, #__layout {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #FFFFFF;
+}
+// body {
+//   padding-bottom: constant(safe-area-inset-bottom);
+//   padding-bottom: env(safe-area-inset-bottom);
+// }
+
+a {
+  text-decoration: none;
+}
+
+span, div, p, a {
+  user-select: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none!important;
+  -webkit-tap-highlight-color: transparent;
+}

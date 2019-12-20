@@ -1,0 +1,54 @@
+.v-application {
+  height: 100%;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%) !important;
+
+  .v-application--wrap {
+    min-height: 100% !important;
+  }
+
+  .v-card {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+  }
+
+  .f-field-item.column {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 61, 105, 0.08);
+
+    .f-field-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(0, 61, 105, 0.5);
+    }
+
+    .f-field-value {
+      font-family: DINPro-Regular;
+      color: #003D69;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  .v-bottom-navigation .nav-btn {
+    height: 64px !important;
+    flex: 1 !important;
+    max-width: none!important;
+  }
+
+  .v-bottom-navigation {
+    background-color: #fff !important;
+    // padding-bottom: constant(safe-area-inset-bottom) !important;;
+    // padding-bottom: env(safe-area-inset-bottom) !important;;
+    // height: calc(64px + constant(safe-area-inset-bottom)) !important;
+    // height: calc(64px + env(safe-area-inset-bottom)) !important;
+  }
+
+  .v-input {
+    font-family: DIN Alternate;
+  }
+
+  .v-tab::before {
+    opacity: 0 !important;
+  }
+}
+
