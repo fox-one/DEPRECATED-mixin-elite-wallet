@@ -1,8 +1,10 @@
-# nuxt-ts-template
+# Mixin elite wallet
 
-> My cat&#39;s meow Nuxt.js project
+> a mixin wallet
 
 ## Build Setup
+
+add your own env file and then
 
 ``` bash
 # install dependencies
