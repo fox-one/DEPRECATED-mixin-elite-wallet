@@ -32,14 +32,14 @@
               :hint="amountHint"
               :rules="rules.amount"
             />
-            <v-text-field
+            <!-- <v-text-field
               v-model="memo"
               auto-grow
               persistent-hint
               rows="1"
               :label="$t('page.withdraw.label.memo')"
               class="mb-4"
-            />
+            /> -->
           </v-form>
         </v-card>
         <v-btn block rounded depressed color="primary" @click="handleSend">
@@ -80,7 +80,7 @@ class WithdrawPage extends Vue {
 
   amount = ''
 
-  memo = ''
+  // memo = ''
 
   get title () {
     return this.$t('document.withdraw.title')
@@ -195,7 +195,7 @@ class WithdrawPage extends Vue {
 
   withdraw () {
     const uuid = require('uuid/v4')()
-    const withdrawUrl = `mixin://withdrawal?address=${this.addressId}&asset=${this.id}&amount=${this.amount}&memo=${encodeURIComponent(this.memo)}&trace=${uuid}`
+    const withdrawUrl = `mixin://withdrawal?address=${this.addressId}&asset=${this.id}&amount=${this.amount}&memo=${encodeURIComponent(this.tag)}&trace=${uuid}`
     window.location.href = withdrawUrl
     this.$root.$emit(this.$rootEvents.PIN_ENTER, () => {
       this.toAddresses()
