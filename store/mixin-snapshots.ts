@@ -13,7 +13,11 @@ export const getters = {
   },
   getGroupedSnapshots(state) {
     const externals = state.externals.map(e => ({ ...e, display: 'external' }))
-    const all = [...state.snapshots, ...externals]
+    const all = [...state.snapshots, ...externals].sort((a, b) => { 
+      const t1 = new Date(a.created_at).getTime()
+      const t2 = new Date(b.created_at).getTime()
+      return t2 - t1
+    })
     const data = all.reduce((group, snapshot) => {
       const date = dateUtil.format(snapshot.created_at, 'YYYY/MM/DD')
       if (!group[date]) {
@@ -22,14 +26,6 @@ export const getters = {
       group[date].push(snapshot)
       return group
     }, {})
-    Object.keys(data).map((date) => {
-      const items = data[date]
-      items.sort((a, b) => { 
-        const t1 = new Date(a.created_at).getTime()
-        const t2 = new Date(b.created_at).getTime()
-        return t2 - t1
-      })
-    })
     return data
   }
 }
