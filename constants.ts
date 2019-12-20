@@ -31,7 +31,7 @@ export const ATM_SUPPORT_ASSETS = ['USDT', 'BTC', 'EOS', 'ETH', 'XIN', 'XRP', 'Z
 
 export const OTC_SUPPORT_ASSETS = ['USDT']
 
-export const DEFAULT_SUB_BOTS = ['7000102362', '7000102275', '7000102035', '7000101996', '7000101571']
+export const DEFAULT_SUB_BOTS = ['7000101487', '7000100141', '7000101914', '7000102362', '7000102275', '7000102035', '7000101996']
 
 export enum StorageKeys {
   FOX_TOKEN = 'foxone_token',

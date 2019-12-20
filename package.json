@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "yarn lint",
     "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
+    "build": "nuxt-ts build --spa",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "pub:dev": "./publish.sh dev",

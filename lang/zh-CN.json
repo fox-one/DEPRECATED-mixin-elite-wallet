@@ -41,7 +41,7 @@
   "page.withdraw.hint.amount": "余额：{balance}",
   "page.withdraw.errors.amount-require": "请填写数量",
   "page.withdraw.errors.amount-invalid": "数据不合法",
-  "page.deposit.title": "提现 {name}",
+  "page.deposit.title": "充值 {name}",
   "page.deposit.label.address": "地址",
   "page.deposit.label.tag": "标签",
   "page.deposit.tip.confirmation": "充值到账至少需要 {confirmations} 个区块确认",
