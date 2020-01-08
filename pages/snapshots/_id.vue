@@ -44,14 +44,14 @@ import { ATM_URL, REGULAR_INVEST_URL, OTC_URL } from '@/constants'
 @Component({
   head () {
     return {
-      title: this.title,
-      meta: [
-        {
-          hid: 'theme-color',
-          name: 'theme-color',
-          content: '#0596FF'
-        }
-      ]
+      title: this.title
+      // meta: [
+      //   {
+      //     hid: 'theme-color',
+      //     name: 'theme-color',
+      //     content: '#0596FF'
+      //   }
+      // ]
     }
   },
   components: {
