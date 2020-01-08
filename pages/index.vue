@@ -8,6 +8,14 @@
         <balance-card @detail="handleToDetail" @login="handleLogin" />
       </balance-mixin>
       <assets-mixin @login="handleLogin">
+        <div class="assets-title">
+          <div class="title">
+            {{ $t('component.assets-list.title') }}
+          </div>
+          <div class="flex-fill text-right">
+            <asset-search />
+          </div>
+        </div>
         <assets-list @detail="handleToDetail" />
       </assets-mixin>
     </div>
@@ -19,6 +27,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import BalanceMixin from '@/components/partial/index/BalanceMixin.vue'
 import BalanceCard from '@/components/partial/index/BalanceCard.vue'
 import AssetsList from '@/components/partial/index/AssetsList.vue'
+import AssetSearch from '@/components/partial/index/AssetSearch.vue'
 import AssetsMixin from '@/components/partial/index/AssetsMixin.vue'
 import { authLogin } from '@/utils/loginUtil'
 
@@ -32,7 +41,8 @@ import { authLogin } from '@/utils/loginUtil'
     BalanceMixin,
     BalanceCard,
     AssetsList,
-    AssetsMixin
+    AssetsMixin,
+    AssetSearch
   }
 })
 class IndexPage extends Vue {
@@ -57,5 +67,17 @@ export default IndexPage
 .index-page {
   height: 100%;
   overflow-y: auto;
+}
+
+.assets-title {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .search-field {
+    display: inline-block;
+    max-width: 180px;
+  }
 }
 </style>

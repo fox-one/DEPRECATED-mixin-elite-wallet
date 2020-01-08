@@ -37,7 +37,7 @@ class DefaultLayout extends Vue {
 
   changeLocale (locale) {
     this.$i18n.setLocaleCookie(locale)
-    this.$router.push(this.switchLocalePath(locale))
+    this.$router.replace(this.switchLocalePath(locale))
   }
 
   init () {

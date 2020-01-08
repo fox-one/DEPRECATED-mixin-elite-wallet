@@ -7,7 +7,7 @@ const config: Configuration = {
   mode: 'spa',
   router: {
     mode: 'hash',
-    middleware: ['layout']
+    middleware: ['layout', 'reloadTheme']
   },
   server: {
     host: '0.0.0.0' // default: localhost
