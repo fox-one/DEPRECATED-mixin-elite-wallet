@@ -24,6 +24,17 @@ class DefaultLayout extends Vue {
   set snackbar (val) {
     this.setSnackbar(val)
   }
+
+  mounted () {
+    if (navigator.language.includes('zh')) {
+      this.changeLocale('zh')
+    }
+  }
+
+  changeLocale (locale) {
+    this.$i18n.setLocaleCookie(locale)
+    this.$router.replace(this.switchLocalePath(locale))
+  }
 }
 export default DefaultLayout
 </script>

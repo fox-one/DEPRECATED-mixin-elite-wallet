@@ -5,17 +5,22 @@ import {
   mdiArrowDown, 
   mdiAccountOutline, 
   mdiHelpCircleOutline,
-  mdiHammer
+  mdiHammer,
+  mdiMagnify,
+  mdiClose
 } from '@mdi/js'
 import errorHandler from '@/utils/errorHandler'
 import numUtil from '@/utils/numUtil'
 import colorUtil from '@/utils/colorUtil'
 import dateUtil from '@/utils/dateUtil'
 import copyUtil from '@/utils/copyUtil'
+import envUtil from '@/utils/envUtil'
 import { ROOT_EVENTS } from '@/constants'
 
 export default () => {
   Vue.prototype.$icons = {
+    mdiClose,
+    mdiMagnify,
     mdiHammer,
     mdiArrowLeft, 
     mdiArrowUp, 
@@ -35,6 +40,8 @@ export default () => {
   Vue.prototype.$dateUtil = dateUtil
 
   Vue.prototype.$copyUtil = copyUtil
+
+  Vue.prototype.$envUtil = envUtil
 
   Vue.prototype.$colors = colorUtil.colors
 

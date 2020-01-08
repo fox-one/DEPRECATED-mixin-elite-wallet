@@ -158,6 +158,8 @@ export default Actions
 
   .opt-item {
     opacity: 1!important;
+    padding: 0 12px!important;
+    min-width: auto;
 
     &::before {
       opacity: 0!important;
@@ -180,5 +182,10 @@ export default Actions
       font-weight: lighter;
     }
   }
+}
+</style>
+<style lang="scss">
+.opts .v-slide-group__next, .opts .v-slide-group__prev {
+  min-width: 32px !important;
 }
 </style>

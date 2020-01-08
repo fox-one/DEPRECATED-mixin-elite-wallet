@@ -7,7 +7,7 @@
       id="scroll-target"
       v-scroll:#scroll-target="onScroll"
       v-infinite-scroll="loadMore"
-      :infinite-scroll-disabled="loading && !hasNext"
+      infinite-scroll-disabled="loadMoreDisabled"
       infinite-scroll-distance="10"
       class="groups"
     >
@@ -88,6 +88,10 @@ class Snapshots extends Vue {
     return [{ height: `calc(100% - ${top})` }]
   }
 
+  get loadMoreDisabled () {
+    return this.loading || !this.hasNext
+  }
+
   onScroll (e) {
     this.offset = e.target.scrollTop
   }
@@ -95,7 +99,7 @@ class Snapshots extends Vue {
   async loadMore () {
     this.loading = true
     await this.requestLoadSnapshots()
-    await this.requestLoadloadExternals()
+    await this.requestLoadExternals()
     this.loading = false
   }
 
@@ -105,7 +109,7 @@ class Snapshots extends Vue {
     } catch (error) {}
   }
 
-  async requestLoadloadExternals () {
+  async requestLoadExternals () {
     try {
       const params = { destination: this.asset.destination, tag: this.asset.tag, asset: this.asset.asset_id }
       await this.loadExternals(params)

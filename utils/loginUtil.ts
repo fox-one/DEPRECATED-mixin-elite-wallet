@@ -6,21 +6,6 @@ import { setUpPollingTasks } from '@/utils/taskUtil'
 import { StorageKeys } from '@/constants'
 import { ClientType } from '@/interface'
 
-export function isMixin() {
-  const w: any = window
-  if (w.webkit && w.webkit.messageHandlers && w.webkit.messageHandlers.MixinContext) {
-    return 'iOS'
-  }
-  if (w.MixinContext && w.MixinContext.getContext) {
-    return 'Android'
-  }
-  return undefined
-}
-
-export function isFoxONE() {
-  return /FoxOne/i.test(navigator.userAgent)
-}
-
 export function authLogin(platform: Platform) {
   if (platform === 'foxone') {
     AuthFoxone.requestCode(true)

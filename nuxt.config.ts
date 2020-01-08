@@ -3,11 +3,13 @@ import i18n from './i18n'
 
 const envPath = process.env.APP_ENV === 'prod' ? `.env.prod` : '.env'
 
+console.log(envPath)
+
 const config: Configuration = {
   mode: 'spa',
   router: {
     mode: 'hash',
-    middleware: ['layout']
+    middleware: ['layout', 'reload-theme']
   },
   server: {
     host: '0.0.0.0' // default: localhost
