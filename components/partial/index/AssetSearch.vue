@@ -9,25 +9,25 @@
     </template>
     <v-card class="search-modal">
       <div class="pa-5 pt-2">
-        <div class="title">
+        <div class="title d-flex align-center">
+          <v-btn icon @click="handleClose">
+            <v-icon color="#000000">
+              {{ $icons.mdiArrowLeft }}
+            </v-icon>
+          </v-btn>
           {{ $t('common.search') }}
         </div>
-        <div class="d-flex align-center mt-3">
-          <v-text-field
-            v-model="text"
-            dense
-            rounded
-            solo
-            hide-details
-            flat
-            background-color="rgb(238, 238, 238)"
-            :placeholder="$t('common.search')"
-            class="search-field"
-          />
-          <v-icon class="ml-3" @click="handleClose">
-            {{ $icons.mdiClose }}
-          </v-icon>
-        </div>
+        <v-text-field
+          v-model="text"
+          dense
+          rounded
+          solo
+          hide-details
+          flat
+          background-color="rgb(238, 238, 238)"
+          :placeholder="$t('common.search')"
+          class="search-field mt-3"
+        />
       </div>
       <assets-list :filter="text" class="assets" @detail="handleToDetail">
         <template #title>
