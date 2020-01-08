@@ -1,6 +1,6 @@
 import envUtil from '@/utils/envUtil'
 
-export function setLayout({ app, route }) {
+export default function reloadTheme({ app, route }) {
   try {
     envUtil.reloadTheme() 
   } catch (error) {
