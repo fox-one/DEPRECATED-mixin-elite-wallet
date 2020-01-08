@@ -24,12 +24,9 @@
             :placeholder="$t('common.search')"
             class="search-field"
           />
-          <v-btn text color="primary" class="ml-2" @click="handleClose">
-            {{ $t('common.cancel') }}
-            <!-- <v-icon>
-              {{ $icons.mdiClose }}
-            </v-icon> -->
-          </v-btn>
+          <v-icon class="ml-3" @click="handleClose">
+            {{ $icons.mdiClose }}
+          </v-icon>
         </div>
       </div>
       <assets-list :filter="text" class="assets" @detail="handleToDetail">
