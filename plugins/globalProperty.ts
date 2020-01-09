@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import { 
-  mdiArrowLeft, 
-  mdiArrowUp, 
-  mdiArrowDown, 
-  mdiAccountOutline, 
+import {
+  mdiArrowLeft,
+  mdiArrowUp,
+  mdiArrowDown,
+  mdiAccountOutline,
   mdiHelpCircleOutline,
   mdiHammer,
   mdiMagnify,
@@ -22,8 +22,8 @@ export default () => {
     mdiClose,
     mdiMagnify,
     mdiHammer,
-    mdiArrowLeft, 
-    mdiArrowUp, 
+    mdiArrowLeft,
+    mdiArrowUp,
     mdiArrowDown,
     mdiAccountOutline,
     mdiHelpCircleOutline
@@ -34,7 +34,7 @@ export default () => {
   }
 
   Vue.prototype.$errorHandler = errorHandler
-  
+
   Vue.prototype.$numUtil = numUtil
 
   Vue.prototype.$dateUtil = dateUtil

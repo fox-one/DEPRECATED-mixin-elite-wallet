@@ -1,7 +1,7 @@
 export default {
   getMixinContext () {
     const w: any = window
-    let ctx;
+    let ctx
     switch (this.isMixin()) {
       case 'iOS':
         ctx = prompt('MixinContext.getContext()')
@@ -27,14 +27,13 @@ export default {
     const w: any = window
     switch (this.isMixin()) {
       case 'iOS':
-        w.webkit.messageHandlers.reloadTheme.postMessage('');
+        w.webkit.messageHandlers.reloadTheme.postMessage('')
         return
       case 'Android':
         w.MixinContext.reloadTheme()
-        return
     }
   },
-  isFoxONE() {
+  isFoxONE () {
     return /FoxOne/i.test(navigator.userAgent)
   }
 }

@@ -4,7 +4,7 @@ import zh from './lang/zh-CN.json'
 export default {
   fallbackLocale: 'en',
   messages: {
-    en: en,
-    zh: zh
+    en,
+    zh
   }
 }

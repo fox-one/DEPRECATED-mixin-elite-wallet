@@ -1,3 +1,4 @@
+/* eslint-disable prefer-promise-reject-errors */
 import axios, { AxiosRequestConfig } from 'axios'
 import { getToken } from '@/utils/loginUtil'
 import { MIXIN_API_HOST } from '@/constants'
@@ -12,7 +13,7 @@ const foxone = axios.create({
 })
 
 foxone.interceptors.request.use(
-  async configs => {
+  async (configs) => {
     if (configs.url === '/oauth/token') {
       return configs
     }
@@ -22,11 +23,11 @@ foxone.interceptors.request.use(
     }
     return configs
   },
-  error => {}
+  (_) => {}
 )
 
 foxone.interceptors.response.use(
-  res => {
+  (res) => {
     if (!res.data) {
       return Promise.reject({ code: -1 })
     }
@@ -40,7 +41,7 @@ foxone.interceptors.response.use(
       return Promise.resolve(res.data)
     }
   },
-  err => {
+  (err) => {
     if (err.response && err.response.data) {
       return Promise.reject(err.response.data)
     } else {
@@ -49,13 +50,13 @@ foxone.interceptors.response.use(
   }
 )
 
-async function request(options: AxiosRequestConfig): Promise<any> {
+async function request (options: AxiosRequestConfig): Promise<any> {
   const res = await foxone.request(options)
   return Promise.resolve(res.data)
 }
 
 export default {
-  post(url: string, options: AxiosRequestConfig = {}) {
+  post (url: string, options: AxiosRequestConfig = {}) {
     const config = {
       url,
       method: 'post',
@@ -64,7 +65,7 @@ export default {
     return request(config as AxiosRequestConfig)
   },
 
-  get(url: string, options: AxiosRequestConfig = {}): Promise<any> {
+  get (url: string, options: AxiosRequestConfig = {}): Promise<any> {
     const config = {
       url,
       method: 'get',
@@ -73,7 +74,7 @@ export default {
     return request(config as AxiosRequestConfig)
   },
 
-  delete(url: string, options: AxiosRequestConfig = {}): Promise<any> {
+  delete (url: string, options: AxiosRequestConfig = {}): Promise<any> {
     const config = {
       url,
       method: 'delete',

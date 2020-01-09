@@ -11,18 +11,18 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setInited(state, value) {
+  setInited (state, value) {
     state.inited = value
   },
-  toast(state, { message, color }) {
+  toast (state, { message, color }) {
     state.snackbar.show = true
     state.snackbar.message = message
     state.snackbar.color = color
   },
-  setSnackbar(state, val) {
+  setSnackbar (state, val) {
     state.snackbar.show = val
   },
-  setLayout(state, val) {
+  setLayout (state, val) {
     state.layout = { ...state.layout, ...val }
   }
 }

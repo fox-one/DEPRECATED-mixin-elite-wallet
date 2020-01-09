@@ -1,16 +1,16 @@
 import { MIXIN_CLIENT_ID, MIXIN_OAUTH_HOST } from '@/constants'
 
-var crypto = require('crypto')
+const crypto = require('crypto')
 
 class OAuth {
-  sha256(buffer) {
+  sha256 (buffer) {
     return crypto
       .createHash('sha256')
       .update(buffer)
       .digest()
   }
 
-  base64URLEncode(str) {
+  base64URLEncode (str) {
     return str
       .toString('base64')
       .replace(/\+/g, '-')
@@ -18,7 +18,7 @@ class OAuth {
       .replace(/=/g, '')
   }
 
-  requestCode(pkce: boolean = false, state: any = '') {
+  requestCode (pkce: boolean = false, state: any = '') {
     if (pkce) {
       this.requestCodePkce(state)
     } else {

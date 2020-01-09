@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import $t from '@/utils/$t'
 
 export interface IError {

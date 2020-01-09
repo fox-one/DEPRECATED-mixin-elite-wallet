@@ -1,12 +1,11 @@
-import { Platform } from '@/interface';
+import { Platform, ClientType } from '@/interface'
 import AuthMixin from '@/utils/auth/AuthMixin'
 import AuthFoxone from '@/utils/auth/AuthFoxone'
 import StorageUtil from '@/utils/storageUtil'
 import { setUpPollingTasks } from '@/utils/taskUtil'
 import { StorageKeys } from '@/constants'
-import { ClientType } from '@/interface'
 
-export function authLogin(platform: Platform) {
+export function authLogin (platform: Platform) {
   if (platform === 'foxone') {
     AuthFoxone.requestCode(true)
     return
@@ -16,7 +15,7 @@ export function authLogin(platform: Platform) {
   }
 }
 
-export function logout(store) {
+export function logout (store) {
   const commit = store.commit
   commit('mixin-profile/setProfile', {})
   commit('mixin-wallet/setAssets', [])
@@ -24,7 +23,7 @@ export function logout(store) {
   StorageUtil.del(StorageKeys.FOX_TOKEN)
 }
 
-export async function loadAccountInfo(store, vue) {
+export async function loadAccountInfo (store) {
   const dispatch = store.dispatch
   const commit = store.commit
   if (!store.getters['mixin-profile/logged']) {
@@ -35,7 +34,7 @@ export async function loadAccountInfo(store, vue) {
       dispatch('mixin-profile/loadProfile')
     ])
     dispatch('mixin-wallet/loadAssets')
-    setUpPollingTasks(store, vue)
+    setUpPollingTasks(store)
   } catch (error) {
     if (error.code === 401) {
       logout(store)
@@ -45,7 +44,7 @@ export async function loadAccountInfo(store, vue) {
   }
 }
 
-export function saveToken({type, token}: {
+export function saveToken ({ type, token }: {
   type: ClientType
   token: string
 }) {
@@ -57,7 +56,7 @@ export function saveToken({type, token}: {
   }
 }
 
-export function getToken({type}: {
+export function getToken ({ type }: {
   type: ClientType
 }) {
   if (process.env.NODE_ENV === 'development' && process.env.TOKEN) {

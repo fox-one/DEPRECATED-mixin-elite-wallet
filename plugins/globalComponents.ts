@@ -25,7 +25,7 @@ import IconGlobal from '@/components/icons/IconGlobal.vue'
 
 import 'animate.css'
 
-VueClipboard.config.autoSetContainer = true 
+VueClipboard.config.autoSetContainer = true
 Vue.use(VueClipboard)
 
 Vue.directive('touch', Touch)

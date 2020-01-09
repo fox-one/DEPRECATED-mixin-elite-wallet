@@ -4,10 +4,10 @@ export default {
     iconfont: 'mdiSvg',
     values: {
       iconWallet: {
-        component: 'icon-wallet',
+        component: 'icon-wallet'
       },
       iconDiscover: {
-        component: 'icon-discover',
+        component: 'icon-discover'
       },
       iconMixin: {
         component: 'icon-mixin'

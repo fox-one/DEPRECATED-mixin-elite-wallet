@@ -6,7 +6,7 @@ export const state = () => ({
 })
 
 export const getters = {
-  logged(state) {
+  logged (state) {
     return state.profile.user_id
   }
 }

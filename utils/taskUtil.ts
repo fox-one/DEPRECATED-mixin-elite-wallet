@@ -2,12 +2,8 @@ let $interval: any = ''
 
 let $store: any = ''
 
-let $vue: any = ''
-
-
-export function setUpPollingTasks (store, vue) {
+export function setUpPollingTasks (store) {
   $store = store
-  $vue = vue
   clearPollingTasks()
   $interval = setInterval(() => {
     refreshUserAssets()

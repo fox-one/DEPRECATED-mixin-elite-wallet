@@ -1,7 +1,7 @@
 import { Configuration } from '@nuxt/types'
 import i18n from './i18n'
 
-const envPath = process.env.APP_ENV === 'prod' ? `.env.prod` : '.env'
+const envPath = process.env.APP_ENV === 'prod' ? '.env.prod' : '.env'
 
 console.log(envPath)
 
@@ -39,7 +39,7 @@ const config: Configuration = {
   plugins: [
     '~/plugins/globalComponents.ts',
     '~/plugins/globalProperty.ts',
-    { src: "~/plugins/vuex-persistedstate.ts", ssr: false },
+    { src: '~/plugins/vuex-persistedstate.ts', ssr: false }
   ],
   buildModules: [
     [
@@ -79,7 +79,7 @@ const config: Configuration = {
   },
   build: {
     transpile: ['vuetify'],
-    extend() {}
+    extend () {}
   },
   env: {
     TOKEN: process.env.TOKEN || '',

@@ -1,16 +1,16 @@
 import { FOX_CLIENT_ID, FOX_OAUTH_HOST } from '@/constants'
 
-var crypto = require('crypto')
+const crypto = require('crypto')
 
 class OAuth {
-  sha256(buffer) {
+  sha256 (buffer) {
     return crypto
       .createHash('sha256')
       .update(buffer)
       .digest()
   }
 
-  base64URLEncode(str) {
+  base64URLEncode (str) {
     return str
       .toString('base64')
       .replace(/\+/g, '-')
@@ -18,7 +18,7 @@ class OAuth {
       .replace(/=/g, '')
   }
 
-  requestCode(pkce: boolean, state: any = '') {
+  requestCode (pkce: boolean, state: any = '') {
     if (pkce) {
       this.requestCodePkce(state)
     } else {
@@ -26,7 +26,7 @@ class OAuth {
     }
   }
 
-  requestCodePkce(state) {
+  requestCodePkce (state) {
     const randomCode = crypto.randomBytes(32)
     const verifier = this.base64URLEncode(randomCode)
     const challenge = this.base64URLEncode(this.sha256(randomCode))
@@ -39,7 +39,7 @@ class OAuth {
     window.location.href = url
   }
 
-  requestCodeServe(state) {
+  requestCodeServe (state) {
     let url = `${FOX_OAUTH_HOST}?client_id=${FOX_CLIENT_ID}&scope=PROFILE%3AREAD+PHONE%3AREAD+ASSETS%3AREAD&response_type=code`
     if (state) {
       const str = encodeURIComponent(JSON.stringify(state))

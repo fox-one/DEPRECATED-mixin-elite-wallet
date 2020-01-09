@@ -8,12 +8,12 @@ export const state = () => ({
 })
 
 export const getters = {
-  getSnapshots(state) {
+  getSnapshots (state) {
     return state.snapshots
   },
-  getGroupedSnapshots(state) {
+  getGroupedSnapshots (state) {
     const externals = state.externals.map(e => ({ ...e, display: 'external' }))
-    const all = [...state.snapshots, ...externals].sort((a, b) => { 
+    const all = [...state.snapshots, ...externals].sort((a, b) => {
       const t1 = new Date(a.created_at).getTime()
       const t2 = new Date(b.created_at).getTime()
       return t2 - t1
@@ -31,10 +31,10 @@ export const getters = {
 }
 
 export const mutations = {
-  setExternals(state, externals) {
+  setExternals (state, externals) {
     state.externals = state.externals.concat(externals)
   },
-  setSnapshots(state, snapshots) {
+  setSnapshots (state, snapshots) {
     state.snapshots = state.snapshots.concat(snapshots)
     if (snapshots.length < 10) {
       state.hasNext = false
@@ -42,17 +42,17 @@ export const mutations = {
       state.hasNext = true
     }
   },
-  removeExternals(state) {
+  removeExternals (state) {
     state.externals = []
   },
-  removeSnapshots(state) {
+  removeSnapshots (state) {
     state.snapshots = []
     state.hasNext = true
   }
 }
 
 export const actions = {
-  async loadSnapshots({ commit, state }, assetId) {
+  async loadSnapshots ({ commit, state }, assetId) {
     const { snapshots: oldSnapshots } = state
     const last = oldSnapshots[oldSnapshots.length - 1]
     const offset = last && last.created_at
@@ -60,7 +60,7 @@ export const actions = {
     const snapshots = await getSnapshots(params)
     commit('setSnapshots', snapshots)
   },
-  async loadExternals({ state, commit }, params) {
+  async loadExternals ({ state, commit }, params) {
     const { externals: oldExternals } = state
     const last = oldExternals[oldExternals.length - 1]
     const offset = last && last.created_at
@@ -71,6 +71,6 @@ export const actions = {
         hasNext = false
       }
       commit('setExternals', externals)
-    } while(hasNext)
+    } while (hasNext)
   }
 }

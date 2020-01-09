@@ -1,8 +1,8 @@
 import envUtil from '@/utils/envUtil'
 
-export default function reloadTheme({ app, route }) {
+export default function reloadTheme () {
   try {
-    envUtil.reloadTheme() 
+    envUtil.reloadTheme()
   } catch (error) {
     console.log('reloadTheme error', error)
   }

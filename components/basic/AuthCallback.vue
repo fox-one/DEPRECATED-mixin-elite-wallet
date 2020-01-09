@@ -51,7 +51,7 @@ class FoxoneAuthCallback extends Vue {
     try {
       const token = await this.tokenFunction(this.code)
       await this.loginFunction(token)
-      loadAccountInfo(this.$store, this)
+      loadAccountInfo(this.$store)
       this.toHome()
     } catch (error) {
       this.error = true

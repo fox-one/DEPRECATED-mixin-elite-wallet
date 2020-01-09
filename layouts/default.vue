@@ -42,7 +42,7 @@ class DefaultLayout extends Vue {
 
   init () {
     (window as any).onNuxtReady(() => {
-      loadAccountInfo(this.$store, this)
+      loadAccountInfo(this.$store)
     })
   }
 }

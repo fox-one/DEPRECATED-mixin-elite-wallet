@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from 'vue'
 import { getUser } from '@/services/api/mixin'
 
 export const state = () => ({
@@ -7,27 +7,27 @@ export const state = () => ({
 })
 
 export const getters = {
-  getUserById(state) {
-    return id => {
+  getUserById (state) {
+    return (id) => {
       return state.users[id]
     }
   }
 }
 
 export const mutations = {
-  setUser(state, { user, id }) {
+  setUser (state, { user, id }) {
     Vue.set(state.users, id, user)
   },
-  lock(state, id) {
+  lock (state, id) {
     Vue.set(state.locks, id, true)
   },
-  unLock(state, id) {
+  unLock (state, id) {
     Vue.set(state.locks, id, false)
   }
 }
 
 export const actions = {
-  async loadUser({ commit, state }, id) {
+  async loadUser ({ commit, state }, id) {
     if (!id) { return }
     const loaded = state.users[id]
     const locked = state.locks[id]
