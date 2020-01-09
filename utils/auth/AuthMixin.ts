@@ -31,7 +31,7 @@ class OAuth {
     const verifier = this.base64URLEncode(randomCode)
     const challenge = this.base64URLEncode(this.sha256(randomCode))
     localStorage.setItem('code-verifier', verifier)
-    let url = `${MIXIN_OAUTH_HOST}/oauth/authorize?client_id=${MIXIN_CLIENT_ID}&scope=PHONE%3AREAD+PROFILE%3AREAD+ASSETS%3AREAD&code_challenge=${challenge}`
+    let url = `${MIXIN_OAUTH_HOST}/oauth/authorize?client_id=${MIXIN_CLIENT_ID}&scope=PHONE%3AREAD+PROFILE%3AREAD+ASSETS%3AREAD+SNAPSHOTS%3AREAD&code_challenge=${challenge}`
     if (state) {
       const str = encodeURIComponent(JSON.stringify(state))
       url += `&state=${str}`
