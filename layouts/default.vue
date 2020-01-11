@@ -14,7 +14,9 @@ import { Component, Vue } from 'vue-property-decorator'
 import { Mutation, State } from 'vuex-class'
 import { loadAccountInfo } from '@/utils/loginUtil'
 
-@Component
+@Component({
+  middleware: 'i18n'
+})
 class DefaultLayout extends Vue {
   @State(state => state.app.snackbar) bindSnackbar
 
@@ -30,14 +32,6 @@ class DefaultLayout extends Vue {
 
   mounted () {
     this.init()
-    if (navigator.language.includes('zh')) {
-      this.changeLocale('zh')
-    }
-  }
-
-  changeLocale (locale) {
-    this.$i18n.setLocaleCookie(locale)
-    this.$router.replace(this.switchLocalePath(locale))
   }
 
   init () {

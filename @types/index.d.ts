@@ -11,6 +11,7 @@ declare module 'vue/types/vue' {
     $routerPush: any
     $numUtil: any
     $dateUtil: any
+    $envUtil: any
     $rootEvents: RootEvents
     $icons: any
     $colors: any
