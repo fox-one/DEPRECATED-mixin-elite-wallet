@@ -4,6 +4,7 @@
     <v-snackbar v-model="snackbar" :color="bindSnackbar.color" :timeout="3000" top>
       {{ bindSnackbar.message }}
     </v-snackbar>
+    <require-auth-dialog />
   </v-app>
 </template>
 

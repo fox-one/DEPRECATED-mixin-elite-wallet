@@ -79,6 +79,8 @@ class Snapshots extends Vue {
 
   offset = 0
 
+  forbidden = false
+
   get expand () {
     return this.offset > 100
   }
@@ -97,6 +99,7 @@ class Snapshots extends Vue {
   }
 
   async loadMore () {
+    if (this.forbidden) { return }
     this.loading = true
     await this.requestLoadSnapshots()
     await this.requestLoadExternals()
@@ -106,7 +109,12 @@ class Snapshots extends Vue {
   async requestLoadSnapshots () {
     try {
       await this.loadSnapshots(this.assetId)
-    } catch (error) {}
+    } catch (error) {
+      if (error.code === 403) {
+        this.forbidden = true
+        this.$root.$emit(this.$rootEvents.ASSETS_FORBIDDEN, 'SNAPSHOTS')
+      }
+    }
   }
 
   async requestLoadExternals () {

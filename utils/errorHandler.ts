@@ -12,7 +12,6 @@ export default ($toast: Function, error: IError) => {
   let { code = '', message = fallback } = error
   if (code) {
     const key = `errorcode.${code}`
-    console.log($t(key), key)
     message = $t(key) === key ? message : `${code}: ${$t(key)}`
   }
   $toast({ message, color: 'error' })

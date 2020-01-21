@@ -6,6 +6,7 @@
     </v-snackbar>
     <app-bottom-nav />
     <pin-confirm-dialog />
+    <require-auth-dialog />
   </v-app>
 </template>
 
@@ -36,7 +37,7 @@ class DefaultLayout extends Vue {
 
   init () {
     (window as any).onNuxtReady(() => {
-      loadAccountInfo(this.$store)
+      loadAccountInfo(this.$store, this)
     })
   }
 }

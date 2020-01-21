@@ -24,6 +24,7 @@
   "common.confirm": "Yes",
   "common.cancel": "Cancel",
   "common.search": "Search",
+  "common.re-auth": "Auth",
   "common.snapshot.type.transfer": "Transfer",
   "common.snapshot.type.deposit": "Deposit",
   "common.snapshot.type.withdrawal": "Withdrawal",
@@ -100,6 +101,8 @@
   "component.address.create-edit-form.errors.label-require": "Label is required",
   "component.address.create-edit-form.errors.destination-require": "Address is required",
   "component.address.create-edit-form.errors.tag-require": "Destination Tag or ID Number or notes is required",
+  "component.require-auth-dialog.access-deny.title": "Access Forbidden",
+  "component.require-auth-dialog.access-deny.text": "Trying to access your {source} data is forbidden, please check the appropriate permissions when authorizing.",
 
   "errorcode.-1": "NETWORK ERROR",
   "errorcode.401": "AUTH FAILED",

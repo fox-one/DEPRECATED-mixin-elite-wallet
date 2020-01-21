@@ -33,8 +33,8 @@ foxone.interceptors.response.use(
     }
     if (res.data.error) {
       const error = res.data.error
-      if (error.code === 401) {
-        return Promise.reject({ code: 401 })
+      if (error.code === (401 || 403)) {
+        return Promise.reject({ code: error.code })
       }
       return Promise.reject({ code: error.code, message: error.description })
     } else {

@@ -10,6 +10,7 @@ import MixinAssetLogo from '@/components/basic/MixinAssetLogo.vue'
 import PinConfirmDialog from '@/components/basic/PinConfirmDialog.vue'
 import QRCode from '@/components/basic/QRCode.vue'
 import SliderTabs from '@/components/basic/SliderTabs.vue'
+import RequireAuthDialog from '@/components/basic/RequireAuthDialog.vue'
 
 // icons
 import IconWallet from '@/components/icons/IconWallet.vue'
@@ -40,6 +41,7 @@ Vue.component('mixin-asset-logo', MixinAssetLogo)
 Vue.component('pin-confirm-dialog', PinConfirmDialog)
 Vue.component('qr-code', QRCode)
 Vue.component('slider-tabs', SliderTabs)
+Vue.component('require-auth-dialog', RequireAuthDialog)
 
 // icons
 Vue.component('icon-wallet', IconWallet)

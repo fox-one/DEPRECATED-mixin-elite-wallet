@@ -19,7 +19,8 @@ export const FOXONE_API_HOST = 'https://api1.kumiclub.com/api/v2'
 export const FOX_OAUTH_HOST = 'https://oauth2.kumiclub.com'
 
 export const ROOT_EVENTS = {
-  PIN_ENTER: 'pin_enter'
+  PIN_ENTER: 'pin_enter',
+  ASSETS_FORBIDDEN: 'assets_forbidden'
 }
 
 export const MIXIN_DEPOSIT_HELP = {

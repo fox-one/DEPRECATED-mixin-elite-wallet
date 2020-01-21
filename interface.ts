@@ -10,4 +10,5 @@ export type Platform = 'mixin' | 'foxone'
 
 export type RootEvents = {
   PIN_ENTER: string
+  ASSETS_FORBIDDEN: string
 }

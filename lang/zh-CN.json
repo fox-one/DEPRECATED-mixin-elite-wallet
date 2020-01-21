@@ -24,6 +24,7 @@
   "common.confirm": "是的",
   "common.cancel": "取消",
   "common.search": "搜索",
+  "common.re-auth": "重新授权",
   "common.snapshot.type.transfer": "转账",
   "common.snapshot.type.deposit": "充值",
   "common.snapshot.type.withdrawal": "提现",
@@ -100,6 +101,8 @@
   "component.address.create-edit-form.errors.label-require": "请填写地址名称",
   "component.address.create-edit-form.errors.destination-require": "请填写提现地址",
   "component.address.create-edit-form.errors.tag-require": "请填写地址标签，数字 ID 或备注",
+  "component.require-auth-dialog.access-deny.title": "访问被拒绝",
+  "component.require-auth-dialog.access-deny.text": "尝试访问你的 {source} 数据被禁止，请在授权时勾选相应的权限。",
 
   "errorcode.-1": "网络错误",
   "errorcode.401": "用户鉴权失败",

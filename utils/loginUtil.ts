@@ -23,7 +23,7 @@ export function logout (store) {
   StorageUtil.del(StorageKeys.FOX_TOKEN)
 }
 
-export async function loadAccountInfo (store) {
+export async function loadAccountInfo (store, vue) {
   const dispatch = store.dispatch
   const commit = store.commit
   if (!store.getters['mixin-profile/logged']) {
@@ -38,6 +38,9 @@ export async function loadAccountInfo (store) {
   } catch (error) {
     if (error.code === 401) {
       logout(store)
+    }
+    if (error.code === 403) {
+      vue.$root.$emit(vue.$rootEvents.ASSETS_FORBIDDEN, 'PROFILE')
     }
   } finally {
     commit('app/setInited', true)
