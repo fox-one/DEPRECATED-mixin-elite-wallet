@@ -2,7 +2,7 @@
   <v-dialog v-model="dialog">
     <v-card>
       <v-card-title>{{ $t('component.require-auth-dialog.access-deny.title') }}</v-card-title>
-      <v-card-text>{{ $t('component.require-auth-dialog.access-deny.text') }}</v-card-text>
+      <v-card-text>{{ $t('component.require-auth-dialog.access-deny.text', { source }) }}</v-card-text>
       <v-card-actions>
         <v-spacer />
         <v-btn text @click="dialog = false">
