@@ -27,7 +27,7 @@
         </v-list-item-title>
         <v-list-item-subtitle>
           <span class="asset-legal">
-            ≈${{ getTotalUsdt(asset) }}
+            ≈ {{ $currency($store) }}{{ $legalify($store, { value: getTotalUsdt(asset), from: 'USD' }) }}
           </span>
         </v-list-item-subtitle>
       </v-list-item-action>

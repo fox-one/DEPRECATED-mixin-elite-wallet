@@ -17,7 +17,7 @@
               <span>{{ symbol }}</span>
             </div>
             <div class="amount-usd">
-              ≈${{ usdAmount }}
+              ≈ {{ $currency($store) }}{{ $legalify($store, { value: usdAmount, from: 'USD' }) }}
             </div>
           </div>
           <div class="pb-5">

@@ -32,10 +32,14 @@ export const getters = {
 
 export const mutations = {
   setExternals (state, externals) {
-    state.externals = state.externals.concat(externals)
+    const lasts = state.externals.slice(-10)
+    const filted = externals.filter(s => lasts.findIndex(l => l.transaction_id === s.transaction_id) < 0)
+    state.externals = state.externals.concat(filted)
   },
   setSnapshots (state, snapshots) {
-    state.snapshots = state.snapshots.concat(snapshots)
+    const lasts = state.snapshots.slice(-10)
+    const filted = snapshots.filter(s => lasts.findIndex(l => l.snapshot_id === s.snapshot_id) < 0)
+    state.snapshots = state.snapshots.concat(filted)
     if (snapshots.length < 10) {
       state.hasNext = false
     } else {

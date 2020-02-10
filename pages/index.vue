@@ -1,7 +1,13 @@
 <template>
   <normal-page-layout>
     <template #title>
-      {{ $t('page.index.title') }}
+      <v-app-bar app flat fixed color="#FFFFFF" class="page-nav">
+        <v-toolbar-title class="page-title pl-1">
+          {{ $t('page.index.title') }}
+        </v-toolbar-title>
+        <v-spacer />
+        <app-setting />
+      </v-app-bar>
     </template>
     <div class="index-page">
       <balance-mixin>

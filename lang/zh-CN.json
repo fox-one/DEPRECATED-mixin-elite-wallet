@@ -31,6 +31,8 @@
   "common.snapshot.type.fee": "手续费",
   "common.snapshot.type.rebate": "退款",
   "common.snapshot.type.INVALID": "未知类型",
+  "common.price": "价格",
+  "common.setting": "设置",
 
   "page.index.title": "小钱包",
   "page.withdraw.title": "提现 {name}",
@@ -103,6 +105,14 @@
   "component.address.create-edit-form.errors.tag-require": "请填写地址标签，数字 ID 或备注",
   "component.require-auth-dialog.access-deny.title": "访问被拒绝",
   "component.require-auth-dialog.access-deny.text": "尝试访问你的 {source} 数据被禁止，请在授权时勾选相应的权限。",
+  "component.setting.currency": "货币单位",
+  "component.setting.currency-title": "设置货币单位",
+  "component.setting.currency.usd": "美元",
+  "component.setting.currency.cny": "人民币",
+  "component.setting.color-style": "涨跌颜色",
+  "component.setting.color-style-title": "设置涨跌颜色",
+  "component.setting.color-style.green_up_red_down": "绿涨红跌",
+  "component.setting.color-style.green_down_red_up": "红涨绿跌",
 
   "errorcode.-1": "网络错误",
   "errorcode.401": "用户鉴权失败",

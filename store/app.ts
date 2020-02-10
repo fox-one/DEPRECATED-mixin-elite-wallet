@@ -1,3 +1,5 @@
+import { COLOR_STYLE } from '@/constants'
+
 export const state = () => ({
   snackbar: {
     show: false,
@@ -7,12 +9,19 @@ export const state = () => ({
   layout: {
     bottomNav: true
   },
-  inited: true
+  inited: true,
+  setting: {
+    currency: 'usd',
+    colorStyle: COLOR_STYLE.GREEN_UP_RED_DOWN
+  }
 })
 
 export const mutations = {
   setInited (state, value) {
     state.inited = value
+  },
+  setSetting (state, value) {
+    state.setting = value
   },
   toast (state, { message, color }) {
     state.snackbar.show = true

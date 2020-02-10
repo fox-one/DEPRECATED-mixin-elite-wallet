@@ -15,6 +15,7 @@ declare module 'vue/types/vue' {
     $rootEvents: RootEvents
     $icons: any
     $colors: any
+    $legalify: any
   }
 
   interface VueConstructor {

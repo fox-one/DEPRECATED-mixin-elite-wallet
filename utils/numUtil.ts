@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import accountjs from 'accounting-js'
+import { formatNumber } from 'accounting-js'
 
 export default {
   getPrecision (n) {
@@ -20,9 +20,9 @@ export default {
   },
   toLegalPrice (store, { from = 'CNY', to, value, precision = 2 }) {
     const rate = store.state.market.rateMap
-    const perference = store.state.user.preference
+    const currency = store.state.app.setting.currency
     const v = isNaN(Number(value)) ? 0 : Number(value)
-    to = to || perference.currency.toUpperCase()
+    to = to || currency.toUpperCase()
     from = from.toUpperCase()
     const rf = from === 'CNY' ? 1 : rate[from]
     const rt = to === 'CNY' ? 1 : rate[to]
@@ -37,5 +37,5 @@ export default {
     const s = symbol && v >= 0 ? '+' : ''
     return s + (Number(v) * 100).toFixed(2) + '%'
   },
-  formatNumber: accountjs.formatNumber
+  formatNumber
 }

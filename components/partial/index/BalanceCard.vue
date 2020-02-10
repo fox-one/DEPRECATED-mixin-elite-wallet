@@ -29,7 +29,7 @@
                 ≈ {{ meta.totalBtc }} BTC
               </div>
               <div class="balancing-legal">
-                ≈${{ meta.totalUsdt }}
+                ≈ {{ $currency($store) }}{{ $legalify($store, { value: meta.totalUsdt, from: 'USD' }) }}
               </div>
             </div>
             <div v-else class="disconnected">

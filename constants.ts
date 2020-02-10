@@ -38,3 +38,13 @@ export enum StorageKeys {
   FOX_TOKEN = 'foxone_token',
   MIXIN_TOKEN = 'mixin_token'
 }
+
+export const CURRENCY = {
+  cny: { unit: '¥' },
+  usd: { unit: '$' }
+}
+
+export const COLOR_STYLE = {
+  GREEN_UP_RED_DOWN: 'green_up_red_down',
+  GREEN_DOWN_RED_UP: 'green_down_red_up'
+}

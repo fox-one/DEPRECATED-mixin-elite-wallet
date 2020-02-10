@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Mutation, State } from 'vuex-class'
+import { Mutation, State, Action } from 'vuex-class'
 import { loadAccountInfo } from '@/utils/loginUtil'
 
 @Component({
@@ -22,6 +22,8 @@ class DefaultLayout extends Vue {
   @State(state => state.app.snackbar) bindSnackbar
 
   @Mutation('app/setSnackbar') setSnackbar
+
+  @Action('market/loadRate') loadRate
 
   get snackbar () {
     return this.bindSnackbar.show
@@ -37,6 +39,7 @@ class DefaultLayout extends Vue {
 
   init () {
     (window as any).onNuxtReady(() => {
+      this.loadRate()
       loadAccountInfo(this.$store, this)
     })
   }

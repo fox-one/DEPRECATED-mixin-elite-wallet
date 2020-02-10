@@ -31,6 +31,8 @@
   "common.snapshot.type.fee": "Fee",
   "common.snapshot.type.rebate": "Rebate",
   "common.snapshot.type.INVALID": "INVALID",
+  "common.price": "Price",
+  "common.setting": "Setting",
 
   "page.index.title": "Wallets",
   "page.withdraw.title": "Withdraw {name}",
@@ -103,6 +105,14 @@
   "component.address.create-edit-form.errors.tag-require": "Destination Tag or ID Number or notes is required",
   "component.require-auth-dialog.access-deny.title": "Access Forbidden",
   "component.require-auth-dialog.access-deny.text": "Trying to access your {source} data is forbidden, please check the appropriate permissions when authorizing.",
+  "component.setting.currency": "Currency Unit",
+  "component.setting.currency-title": "Set Currency Unit",
+  "component.setting.currency.usd": "USD",
+  "component.setting.currency.cny": "CNY",
+  "component.setting.color-style": "Price Color Style",
+  "component.setting.color-style-title": "Set Price Color Style",
+  "component.setting.color-style.green_up_red_down": "Green Up Red Down",
+  "component.setting.color-style.green_down_red_up": "Green Down Red Up",
 
   "errorcode.-1": "NETWORK ERROR",
   "errorcode.401": "AUTH FAILED",

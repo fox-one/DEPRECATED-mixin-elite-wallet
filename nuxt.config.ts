@@ -61,7 +61,7 @@ const config: Configuration = {
         vueI18n: i18n,
         locales: ['en', 'zh'],
         defaultLocale: 'en',
-        strategy: 'prefix_and_default',
+        strategy: 'no_prefix',
         detectBrowserLanguage: false,
         parsePages: false,
         seo: false

@@ -11,12 +11,16 @@
       <div class="balancing">
         <div class="total-balance">
           <v-skeleton-loader dark :loading="!inited" type="heading">
-            {{ balance }} {{ asset && asset.symbol }}
+            <v-layout align-center>
+              {{ balance }} {{ asset && asset.symbol }}
+              <v-spacer />
+              <price-sheet :asset="asset" />
+            </v-layout>
           </v-skeleton-loader>
         </div>
         <div class="total-legal">
           <v-skeleton-loader dark :loading="!inited" type="text">
-            ≈${{ totalLegal }}
+            ≈ {{ $currency($store) }}{{ $legalify($store, { value: totalLegal, from: 'USD' }) }}
           </v-skeleton-loader>
         </div>
       </div>
