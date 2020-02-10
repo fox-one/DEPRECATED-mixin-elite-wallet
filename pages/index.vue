@@ -5,8 +5,6 @@
         <v-toolbar-title class="page-title pl-1">
           {{ $t('page.index.title') }}
         </v-toolbar-title>
-        <v-spacer />
-        <app-setting />
       </v-app-bar>
     </template>
     <div class="index-page">
@@ -20,6 +18,7 @@
           </div>
           <div class="flex-fill text-right">
             <asset-search />
+            <app-setting />
           </div>
         </div>
         <assets-list @detail="handleToDetail" />

@@ -1,7 +1,7 @@
 <template>
   <v-bottom-sheet v-model="sheet">
     <template #activator="{ on }">
-      <v-btn icon small class="ma-0" v-on="on">
+      <v-btn icon class="ma-0" v-on="on">
         <v-icon size="20">
           {{ $icons.mdiSettings }}
         </v-icon>
