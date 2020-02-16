@@ -10,7 +10,7 @@
     </template>
     <v-card>
       <v-card-title>
-        {{ $t('component.setting.color-style-title') }}
+        {{ $t('component.setting.currency-title') }}
       </v-card-title>
       <v-list>
         <v-list-item
