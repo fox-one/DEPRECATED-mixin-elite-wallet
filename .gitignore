@@ -91,3 +91,5 @@ sw.*
 publish.prod.conf
 publish.dev.conf
 publish.sh
+wrangler.toml
+workers-site/
