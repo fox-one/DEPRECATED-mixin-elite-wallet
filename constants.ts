@@ -10,9 +10,9 @@ export const REGULAR_INVEST_URL = process.env.REGULAR_INVEST_URL
 
 export const OTC_URL = process.env.OTC_URL
 
-export const MIXIN_API_HOST = 'https://mixin-api.zeromesh.net/'
+export const MIXIN_API_HOST = 'https://mixin-api.zeromesh.net'
 
-export const MIXIN_OAUTH_HOST = 'https://mixin.one'
+export const MIXIN_OAUTH_HOST = 'https://mixin-www.zeromesh.net'
 
 export const FOXONE_API_HOST = 'https://api1.kumiclub.com/api/v2'
 
