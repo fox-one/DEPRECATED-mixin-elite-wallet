@@ -48,6 +48,15 @@
         "effects": ""
       },
       {
+        "name": "RAND游戏世界",
+        "tags": "博彩",
+        "identity_number": "7000101940",
+        "icon_url": "https://mixin-images.zeromesh.net/Jn77zZz7JPcLMexC4eoTN19ZMZffCrIzXvXfGU9F-dE8LH6XN0ig9Og0WrzOxJaF9YUUShmysImeZLmXK0I-yA=s256",
+        "description": "可信随机数的游戏平台，现已开放多款随机数应用与游戏，支持随机数验证。新用户登录可领100RAND，每日签到还可以再领10RAND，活动期间挖矿无限制。",
+        "url": "https://mixin.one/users/134aea16-b3c0-4f22-a84a-6462397ad930",
+        "effects": ""
+      },
+      {
         "name": "Flowin",
         "tags": "购物 手机充值 精选",
         "identity_number": "7000101963",
@@ -197,6 +206,15 @@
   {
     "title": "娱乐",
     "bots": [
+      {
+        "name": "RAND游戏世界",
+        "tags": "博彩",
+        "identity_number": "7000101940",
+        "icon_url": "https://mixin-images.zeromesh.net/Jn77zZz7JPcLMexC4eoTN19ZMZffCrIzXvXfGU9F-dE8LH6XN0ig9Og0WrzOxJaF9YUUShmysImeZLmXK0I-yA=s256",
+        "description": "可信随机数的游戏平台，现已开放多款随机数应用与游戏，支持随机数验证。新用户登录可领100RAND，每日签到还可以再领10RAND，活动期间挖矿无限制。",
+        "url": "https://mixin.one/users/134aea16-b3c0-4f22-a84a-6462397ad930",
+        "effects": ""
+      },
       {
         "name": "一元夺宝",
         "tags": "博彩",
